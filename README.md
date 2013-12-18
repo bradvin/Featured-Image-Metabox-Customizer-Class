@@ -19,4 +19,4 @@ new Featured_Image_Metabox_Customizer(array(
 
 ## Example Plugin ##
 
-Check out [plugin-featured-image-metabox-customizer.php] for an example plugin.
+Check out plugin-featured-image-metabox-customizer.php for an example plugin.
