@@ -105,9 +105,15 @@ if ( !class_exists( 'Featured_Image_Metabox_Customizer' ) ) {
 		 * @return mixed
 		 */
 		function change_featured_image_media_strings($strings, $post) {
-			if ( $post->post_type === $this->post_type ) {
-				$strings['setFeaturedImage']      = $this->set_text;
-				$strings['setFeaturedImageTitle'] = $this->set_text;
+
+			// checks if post object is empty or not
+			if ( ! empty($post) ) {
+
+				if ( $post->post_type === $this->post_type ) {
+					$strings['setFeaturedImage']      = $this->set_text;
+					$strings['setFeaturedImageTitle'] = $this->set_text;
+				}
+
 			}
 
 			return $strings;
